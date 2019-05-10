@@ -26,7 +26,7 @@ var getUpcomingVotes = function (aUrl, aCallback) {
     client.get('https://api.oireachtas.ie/v1/legislation?bill_status=Current&bill_source=Government,Private%20Member&date_start=2019-05-01&date_end=2099-01-01&limit=50&chamber_id=&lang=en', function (response) {
         // do something with response
         
-        aCallback(response.toJSON());
+        aCallback(JSON.parse(response));
         console.log('Api.Oireactas.ie returned data.');
         //console.log(responseBody);
     });
