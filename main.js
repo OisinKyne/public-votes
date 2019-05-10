@@ -38,4 +38,4 @@ var handleOireachtasResponse = function (oireachtasResponse) {
 /**
  * Main script starts here
  */
-getUpcomingVotes('fake_url', handleOireachtasResponse(response));
+getUpcomingVotes('fake_url', handleOireachtasResponse);
